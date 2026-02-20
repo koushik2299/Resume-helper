@@ -1,0 +1,328 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{lmodern} % Optional: For modern fonts
+\renewcommand\normalsize{\fontsize{13}{13.5}\selectfont}
+
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+%----------FONT OPTIONS----------
+
+%\usepackage{charter}
+%\usepackage[default]{sourcesanspro}
+% sans-serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+%\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+
+
+% serif
+%\usepackage{CormorantGaramond}
+%\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.9in}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+\usepackage{titlesec} % Ensure titlesec package is loaded
+
+% Reduce spacing before and after sections
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+\titlespacing*{\subsubsection}{0pt}{2pt}{0pt}
+
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-0.5pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheadingg}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt} % Increase the spacing here
+}
+
+\usepackage{xcolor} % Include the xcolor package for color support
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\textcolor{gray}{\small #3}} & \textit{\textcolor{gray}{\small #4}} \\
+    \end{tabular*}\vspace{-4pt} % Adjust spacing here if needed
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & {\small #2}\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, labelsep=0.1in, itemsep=3pt, topsep=0pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+%----------HEADING----------
+\begin{center}
+    {\LARGE \textbf{Sai Koushik Gandikota}} \\[2pt]
+    %\textcolor{gray}{\small Data Scientist - Machine Learning} 
+    \\[4pt]
+    {\small Gaithersburg, USA | (669) 222-9587 | 
+    \href{mailto:saikoushik.gsk@gmail.com}{saikoushik.gsk@gmail.com} | 
+    \href{https://github.com/koushik2299}{GitHub} | 
+    \href{https://www.linkedin.com/in/gandikota-sai-koushik/}{LinkedIn} | 
+    \href{https://koushik2299.github.io/}{Portfolio}} 
+\end{center}
+
+
+
+
+%-----------SUMMARY-----------
+%-----------SUMMARY-----------
+%-----------SUMMARY-----------
+\section{Summary}
+\small\justifying
+\begin{itemize}[leftmargin=0.15in, labelsep=0.1in, itemsep=0pt, topsep=0.5pt]
+\item AI Engineer with 6+ yrs partnering with stakeholders to design compliant AI solutions saving over \$100K
+\item Led discovery workshops translating business requirements into technical specifications, reducing rework by 40\%
+\item Deployed GenAI documentation systems ensuring HIPAA compliance and boosting report accuracy across teams
+\item Facilitated cross-functional implementation of AI solutions, streamlining workflows and saving 1,000+ hours annually
+\end{itemize}
+
+
+
+
+
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+
+\resumeSubheading
+{AI Engineer | AstraZeneca}{Aug 2025 -- Present}
+{[LLMs, ML, NLP, LLMOps]}{Gaithersburg, MD}
+\resumeItem{\textit{\textcolor{black}{Evidence Generation, Publications \& Partnerships team using GenAI to accelerate evidence, insights, and compliant comms.}}}\vspace{1pt}
+\resumeItemListStart
+\resumeItem{Partnered with stakeholders on use case discovery, deploying 4 GenAI solutions saving 1,200 hours annually}
+\resumeItem{Created technical specifications \& compliance documentation ensuring HIPAA adherence, reducing audit risks}
+\resumeItem{Led implementation \& change management for AI workflows, cutting evidence generation time across 5 teams}
+\resumeItem{Facilitated cross-functional collaboration delivering AI training on Python, R \& LLMs; upskilled 30+ SMEs}
+\resumeItemListEnd
+
+
+\resumeSubheading
+  {Gen AI Engineer | Statistics without Borders}{Jan 2024 -- Present}
+  {[Python, TensorFlow, Pytorch, MLOps]}{Boston, MA}
+\resumeItem{\textit{\textcolor{black}{Built 200+ GenAI solutions to automate complex workflows, streamline decision pipelines, and save 1,000+ hours of dev time}}}\vspace{1pt}
+
+  \resumeItemListStart
+    \resumeItem{Deployed production-ready LLM APIs \& data pipelines into workflows, reducing review time 35\% \& saving \$50K}
+    \resumeItem{Partnered with stakeholders to deliver GenAI solutions for evidence summarization, cutting drafting time 40\%}
+    \resumeItem{Operationalized ML models with scalable Python pipelines, improving compliance tracking accuracy by 22\%}
+    \resumeItem{Delivered technical onboarding for non-technical users, boosting adoption rates 30\% \& turnaround 18\%}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Data Analyst | Mass General Brigham \& Harvard University}{Jan 2024 -- Jun 2024}
+  {[Python, Snowflake, SAS, SQL, XGBoost, Power BI]}{Boston, MA}
+  \resumeItemListStart
+    \resumeItem{Built predictive PTSD model on 800K EHRs; early alerts reduced 30-day readmissions by 11\%}
+
+    \resumeItem{Reduced 89→9 features with SHAP; Power BI visuals halved explain time and boosted stakeholder trust}
+    \resumeItem{Designed PSM A/B trials (Chi-square, ANOVA), yielding 4 publishable insights and guiding \$200K grant approval}
+    \resumeItem{Applied Bayesian causal impact to flag 5 demand drivers, lowering no-show rate 18\% within three months}
+  \resumeItemListEnd
+
+
+
+\resumeSubheading
+  {Data Scientist | Mankind Pharma}{Aug 2019 -- Aug 2022}
+  {[Python, SQL, Snowflake, AWS Glue]}{Vijayawada, AP, India}
+
+
+  \resumeItemListStart
+    \resumeItem{Designed predictive models in Python \& Snowflake, improving forecast accuracy by 25\% via statistical analysis}
+    \resumeItem{Built data pipelines with AWS Glue and SQL, reducing end-to-end latency 40\% and ensuring data reliability}
+    \resumeItem{Collaborated cross-functionally to deploy ML systems in Azure DevOps, cutting defects through CI/CD 30\%}
+  \resumeItemListEnd
+
+
+
+
+
+
+
+
+
+
+
+  \resumeSubHeadingListEnd
+
+  %-----------PROFESSIONAL EXPERIENCE-----------
+% \section{Other Experience}
+%   \resumeSubHeadingListStart
+
+
+%     % \resumeSubheading
+%     %   {Graduate Teaching and Research Assistant | Northeastern University}{Jan 2023 -- Dec 2023}
+%     %   {[Python, Excel, Azure, GenAI]}{Boston, MA}
+%     %   \resumeItemListStart
+%     %     \resumeItem{Developed  a RAG-based chatbot using FAQ and lab manual database to assist information access for 350+ students}
+%     %     \resumeItem{Involved in Cross-Functional Medical Research by investigating patterns using Statistic Analysis and Generative AI}
+%     %     \resumeItem{Taught Tableau Desktop to business school created over 30+ Dashboards and drafted a Comprehensive Manual}
+%     %   \resumeItemListEnd
+
+
+% \resumeSubheading
+%   {Graduate Teaching \& Research Assistant | Northeastern University}{Jan 2023 -- Dec 2023}
+%   {[Python, Tableau, Azure, GenAI]}{Boston, MA}
+% \resumeItemListStart
+%   \resumeItem{Built RAG chatbot from FAQs and manuals; 350 students self-served, cutting faculty load 5 hrs/week}
+%   \resumeItem{Collaborated with clinicians on Python + GenAI analyses; shared findings at two research forums}
+%  % \resumeItem{Led Power BI workshops for 500+ students; mentored 30 dashboards and wrote a 40-page user guide}
+% \resumeItemListEnd
+
+
+
+%   \resumeSubHeadingListEnd
+
+%   %-----------TECHNICAL SKILLS-----------
+\section{SKILLS}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt, parsep=0.4pt]
+\item \textbf{AI \& LLMs:} Generative AI, PyTorch, TensorFlow, fine-tuning, deployment, model operationalization
+\item \textbf{Programming \& APIs:} Python, SQL, Java, React, API design, REST, integration
+\item \textbf{Data Engineering:} Data pipelines, Snowflake, AWS Glue, Azure Synapse, ETL
+\item \textbf{Deployment \& MLOps:} Docker, AWS CDK, ECS, Azure DevOps, CI/CD, scalability, security
+\item \textbf{Analytics \& Methods:} Power BI, Tableau, dashboards, Agile, SCRUM, best practices
+\end{itemize}
+
+
+
+
+  %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingg
+      {Northeastern University}{Sep 2022 -- Dec 2024}
+      {Master of Science in Data Analytics Engineering}{Boston, MA}
+    % \resumeSubheadingg
+    %   {VIT University}{Aug 2018 -- Jul 2022}
+    %   {Bachelor of Technology in Computer Science, Minor in Data Analytics}{Amaravati, AP}
+  \resumeSubHeadingListEnd
+
+%-----------ACADEMIC PROJECTS-----------
+
+% % Example usage
+% \section{Academic Projects}
+% \resumeSubHeadingListStart
+
+%   \resumeProjectHeading
+%     {\textbf{Customer Churn Prediction System}}{Feb 2024 -- Jun 2024}
+%     \resumeItemListStart
+%           \resumeItem{Deployed a CatBoost churn prediction model on AWS SageMaker with data quality checks via Glue DataBrew.
+% }
+%       \resumeItem{Optimized model with 9 MLflow experiments, refining features and model tuning, boosting metrics by 12\%.}
+%     \resumeItemListEnd
+
+
+% \resumeProjectHeading
+%   {\textbf{Customer Behavior Analysis and Sales Forecasting}}{Feb 2024 -- Jun 2024}
+%   \resumeItemListStart
+%     \resumeItem{Built a SQL-based analytics model to analyze customer purchase patterns and forecast monthly sales with 92\%.}
+%     \resumeItem{Developed Power BI dashboards to visualize customer segmentation, churn trends.}
+%   \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Certifications-----------
+\section{Extracurricular \& Certifications}
+    \resumeItemListStart
+      \resumeItem{\href{https://cp.certmetrics.com/amazon/en/public/verify/credential/b1041a5ad5c3454e9db23eb990dd1d21}{\textbf{AWS Certified Machine Learning Engineer Associate}} and \href{https://verify.skilljar.com/c/ezbozyczpx4w}{\textbf{Certified Data Science Practitioner}} }
+      \resumeItem{Won 3 Data Hackathons and Conducted 6 Data Events at Northeastern, Produced youtube videos on \href{https://www.youtube.com/@mlmadeeasy-007}{\textbf{DataScience}}}
+    \resumeItemListEnd
+
+
+\end{document}
