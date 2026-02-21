@@ -21,6 +21,7 @@ class ClaudeClient:
         """
         self.api_key = api_key or settings.anthropic_api_key
         self.client = Anthropic(api_key=self.api_key)
+        self.model = settings.claude_model
         self.jd_analyzer = JDAnalyzer(api_key=self.api_key)
     
     def analyze_job_description(self, job_description: str) -> JobDescriptionMetadata:

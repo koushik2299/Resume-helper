@@ -120,7 +120,7 @@ MIN_KEYWORDS_REQUIRED=5
 TOP_KEYWORDS_COUNT=8
 
 # Claude model
-CLAUDE_MODEL=claude-sonnet-4-20250514
+CLAUDE_MODEL=claude-sonnet-4-6
 ```
 
 ## 🐛 Troubleshooting

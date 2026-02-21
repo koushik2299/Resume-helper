@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     
     # API Configuration
     anthropic_api_key: str = Field(..., env="ANTHROPIC_API_KEY")
-    claude_model: str = Field(default="claude-sonnet-4-20250514", env="CLAUDE_MODEL")
+    claude_model: str = Field(default="claude-sonnet-4-6", env="CLAUDE_MODEL")
     
     # Job Board API (Adzuna)
     adzuna_app_id: str = Field(default="", env="ADZUNA_APP_ID")
